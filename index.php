@@ -39,9 +39,9 @@ require_once 'search.php';
             <tr>
                 <td><input type="text" name="title" placeholder="Title"></td>
                 <td><input type="text" name="author" placeholder="Author"></td>
-                <td><input type="text" name="available" placeholder="Language"></td>
+                <td><input type="text" name="available" placeholder="Availability"></td>
                 <td><input type="text" name="pages" placeholder="Pages"></td>
-                <td><input type="text" name="isbn" placeholder="Year"></td>
+                <td><input type="text" name="isbn" placeholder="ISBN"></td>
                 <td><input type="submit" value="➕     Add   "></td>
             </tr>
     </table>
