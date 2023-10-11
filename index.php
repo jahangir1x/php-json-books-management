@@ -21,13 +21,13 @@ $books = json_decode(file_get_contents('assets/books.json'), true);
                 Author
             </th>
             <th>
-                Language
+                Available
             </th>
             <th>
                 Pages
             </th>
             <th>
-                Year
+                ISBN
             </th>
         </tr>
         <?php foreach ($books as $key => $book) : ?>
@@ -39,13 +39,13 @@ $books = json_decode(file_get_contents('assets/books.json'), true);
                     <?= $book['author'] ?>
                 </td>
                 <td>
-                    <?= $book['language'] ?>
+                    <?= $book['available'] ? 'True' : 'False' ?>
                 </td>
                 <td>
                     <?= $book['pages'] ?>
                 </td>
                 <td>
-                    <?= $book['year'] ?>
+                    <?= $book['isbn'] ?>
                 </td>
                 <td>
                     <a href="remove-book.php?id=<?php echo $key ?>"><button>➖ Remove</button></a>
@@ -61,19 +61,23 @@ $books = json_decode(file_get_contents('assets/books.json'), true);
                     <input type="text" name="author" placeholder="Author">
                 </td>
                 <td>
-                    <input type="text" name="language" placeholder="Language">
+                    <input type="text" name="available" placeholder="Language">
                 </td>
                 <td>
                     <input type="text" name="pages" placeholder="Pages">
                 </td>
                 <td>
-                    <input type="text" name="year" placeholder="Year">
+                    <input type="text" name="isbn" placeholder="Year">
                 </td>
                 <td>
                     <input type="submit" value="➕     Add   ">
                 </td>
             </tr>
     </table>
+    <br>
+    <br>
+    <br>
+    <a href="assets/books.json">view raw JSON contents</a>
 </body>
 
 </html>
