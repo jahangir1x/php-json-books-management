@@ -1,5 +1,6 @@
 <?php
 $books = json_decode(file_get_contents('assets/books.json'), true);
+require_once 'search.php';
 ?>
 
 <html lang="en">
@@ -12,6 +13,10 @@ $books = json_decode(file_get_contents('assets/books.json'), true);
 
 <body>
     <h1>Books</h1>
+    <form action="index.php" method="GET">
+        <input type="text" name="search" placeholder="One Hundred Years Of Solitude" value=<?= $_GET['search'] ?>>
+        <input type="submit" value="🔍 Search">
+    </form>
     <table border="3">
         <tr>
             <th>
