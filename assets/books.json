@@ -1,0 +1,79 @@
+{
+    "0": {
+        "author": "Miguel de Cervantes",
+        "language": "Spanish",
+        "pages": 1056,
+        "title": "Don Quijote De La Mancha",
+        "year": 1610
+    },
+    "1": {
+        "author": "Geoffrey Chaucer",
+        "language": "English",
+        "pages": 544,
+        "title": "The Canterbury Tales",
+        "year": 1450
+    },
+    "2": {
+        "author": "Anton Chekhov",
+        "language": "Russian",
+        "pages": 194,
+        "title": "Stories",
+        "year": 1886
+    },
+    "3": {
+        "author": "Joseph Conrad",
+        "language": "English",
+        "pages": 320,
+        "title": "Nostromo",
+        "year": 1904
+    },
+    "5": {
+        "author": "Denis Diderot",
+        "language": "French",
+        "pages": 596,
+        "title": "Jacques the Fatalist",
+        "year": 1796
+    },
+    "6": {
+        "author": "Alfred D\u00f6blin",
+        "language": "German",
+        "pages": 600,
+        "title": "Berlin Alexanderplatz",
+        "year": 1929
+    },
+    "8": {
+        "author": "Fyodor Dostoevsky",
+        "language": "Russian",
+        "pages": 656,
+        "title": "The Idiot",
+        "year": 1869
+    },
+    "9": {
+        "author": "Fyodor Dostoevsky",
+        "language": "Russian",
+        "pages": 768,
+        "title": "The Possessed",
+        "year": 1872
+    },
+    "11": {
+        "author": "George Eliot",
+        "language": "English",
+        "pages": 800,
+        "title": "Middlemarch",
+        "year": 1871
+    },
+    "12": {
+        "author": "sdfsdfdfdf",
+        "language": "dfsdfsdf",
+        "pages": "sdfsdfsdf",
+        "title": "asdfdf",
+        "year": "sdfsdfsdfsdf"
+    },
+    "13": {
+        "author": "sdfsdf",
+        "language": "sdfsdfs",
+        "pages": "dfdfsdfsd",
+        "title": "asdfsdfsdf",
+        "year": "fsdfsdfsdf"
+    }
+}
