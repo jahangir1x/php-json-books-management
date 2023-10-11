@@ -7,10 +7,10 @@ if (
     $_POST['title'] == "" &&
     $_POST['year'] == ""
 ) {
-    // Redirect to book-manager.php
-    header(('Location: book-manager.php'));
+    // Redirect to index.php
+    header(('Location: index.php'));
 } else {
-    $books = json_decode(file_get_contents('books.json'), true);
+    $books = json_decode(file_get_contents('assets/books.json'), true);
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Create new book array
         $newBook = [
@@ -24,9 +24,9 @@ if (
 
         // Update books.json
         $updatedBooksData = json_encode($books, JSON_PRETTY_PRINT);
-        file_put_contents('books.json', $updatedBooksData);
+        file_put_contents('assets/books.json', $updatedBooksData);
 
-        // Redirect to book-manager.php
-        header('Location: book-manager.php');
+        // Redirect to index.php
+        header('Location: index.php');
     }
 }

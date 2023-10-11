@@ -1,5 +1,5 @@
 <?php
-$books = json_decode(file_get_contents('books.json'), true);
+$books = json_decode(file_get_contents('assets/books.json'), true);
 ?>
 
 <html lang="en">
