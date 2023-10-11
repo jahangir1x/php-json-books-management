@@ -37,11 +37,11 @@ require_once 'search.php';
         <?php endforeach; ?>
         <form action="add-book.php" method="POST">
             <tr>
-                <td><input type="text" name="title" placeholder="Title"></td>
-                <td><input type="text" name="author" placeholder="Author"></td>
-                <td><input type="text" name="available" placeholder="Availability"></td>
-                <td><input type="text" name="pages" placeholder="Pages"></td>
-                <td><input type="text" name="isbn" placeholder="ISBN"></td>
+                <td><input type="text" name="title" placeholder="Title" required></td>
+                <td><input type="text" name="author" placeholder="Author" required></td>
+                <td><input type="checkbox" name="available" checked> </td>
+                <td><input type="number" name="pages" placeholder="Pages" required></td>
+                <td><input type="number" name="isbn" placeholder="ISBN" required></td>
                 <td><input type="submit" value="➕     Add   "></td>
             </tr>
     </table>
