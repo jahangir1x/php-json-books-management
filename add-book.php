@@ -9,28 +9,27 @@ if (!isNonEmptyFieldAvailable()) {
 // Check if data is valid
 validateData();
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Get books data
-    $books = json_decode(file_get_contents('assets/books.json'), true);
+// Get books data
+$books = json_decode(file_get_contents('assets/books.json'), true);
 
 
-    // Create new book array
-    $newBook = [
-        'title' => $_POST['title'],
-        'author' => $_POST['author'],
-        'available' => (strtolower($_POST['available']) == 'true') ? true : false,
-        'pages' => $_POST['pages'],
-        'isbn' => $_POST['isbn'],
-    ];
-    $books[] = $newBook;
+// Create new book array
+$newBook = [
+    'title' => $_POST['title'],
+    'author' => $_POST['author'],
+    'available' => (strtolower($_POST['available']) == 'true') ? true : false,
+    'pages' => $_POST['pages'],
+    'isbn' => $_POST['isbn'],
+];
+$books[] = $newBook;
 
-    // Update books.json
-    $updatedBooksData = json_encode($books, JSON_PRETTY_PRINT);
-    file_put_contents('assets/books.json', $updatedBooksData);
+// Update books.json
+$updatedBooksData = json_encode($books, JSON_PRETTY_PRINT);
+file_put_contents('assets/books.json', $updatedBooksData);
 
-    // Redirect to index.php
-    header('Location: index.php');
-}
+// Redirect to index.php
+header('Location: index.php');
+die();
 
 // Check if at least one of the fields is non-empty
 function isNonEmptyFieldAvailable()
