@@ -6,7 +6,7 @@ $books = json_decode(file_get_contents('assets/books.json'), true);
 $newBook = [
     'title' => $_POST['title'],
     'author' => $_POST['author'],
-    'available' => (strtolower($_POST['available']) == 'true') ? true : false,
+    'available' => (strtolower($_POST['available']) == 'on') ? true : false,
     'pages' => $_POST['pages'],
     'isbn' => $_POST['isbn'],
 ];
