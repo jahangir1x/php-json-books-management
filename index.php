@@ -19,6 +19,7 @@ require_once 'search.php';
             <input class="form-control col-auto" type="text" name="search" size="32" placeholder="something" value=<?php echo (isset($_GET['search'])) ? $_GET['search'] : "" ?>>
             <input class="col-auto btn btn-primary" type="submit" value="🔍 Search">
         </form>
+        <a href="assets/books.json" target="_blank">view raw JSON contents</a>
         <table class="table table-striped table-bordered">
             <tr>
                 <th>Title</th>
@@ -48,10 +49,6 @@ require_once 'search.php';
                 </tr>
             <?php endforeach; ?>
         </table>
-        <br>
-        <br>
-        <br>
-        <a href="assets/books.json" target="_blank">view raw JSON contents</a>
     </div>
 </body>
 
